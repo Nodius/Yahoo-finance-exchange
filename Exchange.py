@@ -1,3 +1,4 @@
+#для запуска нужны библиотеки yahoo-finance,requests,PIL,urllib
 from tkinter import *
 from io import BytesIO
 from PIL import Image, ImageTk
