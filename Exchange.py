@@ -35,7 +35,7 @@ def graph(event):
 
 #скачивание кодов биржи     
 def tickerlist(event):
-    url="http://investexcel.net/wp-content/uploads/2013/12/Yahoo-Ticker-Symbols-Jan-2015.zip"
+    url="http://investexcel.net/wp-content/uploads/2015/01/Yahoo-Ticker-Symbols-Jan-2016.zip"
     webbrowser.open(url)
 
      
