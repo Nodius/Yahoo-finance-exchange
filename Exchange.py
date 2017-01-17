@@ -41,21 +41,22 @@ def tickerlist(event):
      
 root=Tk()
 root.title('Exchange')
-root.geometry('1000x565+450+200')
+root.geometry('1000x600+450+200')
 root.resizable('0','0')
+root.iconbitmap('icon.ico')
 
 lab1=Label(root,text='Yahoo Finance',font="Arial 18",fg="Red")
-lab2=Label(root,text='Введите биржевой код')
-lab3=Label(root,text='Объем данных в днях')
+lab2=Label(root,text='Enter of ticker symbol')
+lab3=Label(root,text='The amount of data in days')
 
 ent1=Entry(root)
 ent2=Entry(root)
 
-but1=Button(root,text="Запрос",width=30,bg="white",fg="blue")
+but1=Button(root,text="Request",width=30,bg="white",fg="blue")
 
-but2=Button(root,text="Скачать биржевые коды",width=30,bg="white",fg="blue") 
+but2=Button(root,text="Download ticker symbols",width=30,bg="white",fg="blue")
 
-tex1=Text(root,font="Verdana 12",wrap=WORD,width=100)
+tex1=Text(root,font="Verdana 12",wrap=WORD,width=100,height=100)
 
 but1.bind("<Button-1>",request)
 but2.bind("<Button-1>",tickerlist)
@@ -66,6 +67,6 @@ lab2.pack()
 ent2.pack()
 lab3.pack()
 but1.pack()
-but2.place(x=800,y=50)
+but2.place(x=770,y=50)
 tex1.pack()
 root.mainloop()
